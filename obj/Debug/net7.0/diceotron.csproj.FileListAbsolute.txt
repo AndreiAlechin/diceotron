@@ -1,0 +1,14 @@
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\bin\Debug\net7.0\diceotron.exe
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\bin\Debug\net7.0\diceotron.deps.json
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\bin\Debug\net7.0\diceotron.runtimeconfig.json
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\bin\Debug\net7.0\diceotron.dll
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\bin\Debug\net7.0\diceotron.pdb
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\diceotron.GeneratedMSBuildEditorConfig.editorconfig
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\diceotron.AssemblyInfoInputs.cache
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\diceotron.AssemblyInfo.cs
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\diceotron.csproj.CoreCompileInputs.cache
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\diceotron.dll
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\refint\diceotron.dll
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\diceotron.pdb
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\diceotron.genruntimeconfig.cache
+N:\data-backup\stuff\recovered-22.06.13\Real\development\projects\diceotron\obj\Debug\net7.0\ref\diceotron.dll
