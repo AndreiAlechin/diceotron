@@ -10,8 +10,9 @@
             int arg3 = int.Parse(args[2]);
             char arg4 = char.Parse(args[3]);
 
-            //Run the roller with the arguments and get the result.
+            // Run the roller with the arguments and get the result.
             // Note to self for later: tuple types for getting more detail out of the roller for fancier output?.
+            // Note to self for later: input checking method to catch bad/incorrect input.
             string rolleroutput = Roller(arg1, arg2, arg3, arg4);
 
             //Send the roller result to the output method.
