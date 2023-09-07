@@ -29,7 +29,7 @@ namespace DiceOTron
             Random random = new Random();
             string rollresult;
             int diceresult = 0;
-            // To account for exclusive maximum of 2nd argument.
+            // To account for exclusive maximum of 2nd argument in random.Next.
             int dicefaceslimit = dicefaces + 1;
             
             //Roll the dice. Advantage/disadvantage to add later. Local function?
