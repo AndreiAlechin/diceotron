@@ -1,4 +1,6 @@
-﻿namespace DiceOTron
+﻿using System;
+
+namespace DiceOTron
 {
     class Program
     {
@@ -24,7 +26,22 @@
         private static string Roller(int numdice, int dicefaces, int modifier, char advordis)
         {
             // For testing only. Actual code for the roller goes here.
-            string rollresult = numdice + " " + dicefaces + " " + modifier + " " + advordis;
+            Random random = new Random();
+            string rollresult;
+            int diceresult = 0;
+            // To account for exclusive maximum of 2nd argument.
+            int dicefaceslimit = dicefaces + 1;
+            
+            //Roll the dice. Advantage/disadvantage to add later. Local function?
+            for (int i = 0; i < numdice; i++)
+            {
+                diceresult += random.Next(1, dicefaceslimit);
+            }
+
+            //Apply the modifier.
+            diceresult += modifier;
+
+            rollresult = diceresult + " " + advordis;
             return rollresult;
         }
 
@@ -32,7 +49,7 @@
         // Basic output for now; might get fancier later.
         private static void Outputter(string rollermessage)
         {
-            Console.WriteLine(rollermessage);
+            Console.WriteLine(rollermessage);       
             return;
         }
     }
