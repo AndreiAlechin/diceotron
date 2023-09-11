@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "N:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj": {}
+    "n:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj": {}
   },
   "projects": {
-    "N:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj": {
+    "n:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj",
+        "projectUniqueName": "n:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj",
         "projectName": "diceotron",
-        "projectPath": "N:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj",
+        "projectPath": "n:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\diceotron.csproj",
         "packagesPath": "C:\\Users\\armand\\.nuget\\packages\\",
-        "outputPath": "N:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\obj\\",
+        "outputPath": "n:\\data-backup\\stuff\\recovered-22.06.13\\Real\\development\\projects\\diceotron\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\armand\\AppData\\Roaming\\NuGet\\NuGet.Config"

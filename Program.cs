@@ -25,25 +25,84 @@ namespace DiceOTron
         // Note to self for later: tuple types for getting more detail out of the roller for fancier output?.
         private static string Roller(int numdice, int dicefaces, int modifier, char advordis)
         {
-            // For testing only. Actual code for the roller goes here.
-            Random random = new Random();
             string rollresult;
-            int diceresult = 0;
-            // To account for exclusive maximum of 2nd argument in random.Next.
-            int dicefaceslimit = dicefaces + 1;
             
-            //Roll the dice. Advantage/disadvantage to add later. Local function?
-            for (int i = 0; i < numdice; i++)
+            switch(advordis)
             {
-                diceresult += random.Next(1, dicefaceslimit);
+                case 'a':
+                {
+                    // Roll twice.
+                    int diceresult_a = InternalRoller(numdice, dicefaces, modifier);
+                    int diceresult_b = InternalRoller(numdice, dicefaces, modifier);
+
+                    // Select the higher roll and return that. If neither is higher, return _a.
+                    if (diceresult_a > diceresult_b)
+                    {
+                        rollresult = diceresult_a.ToString();
+                        return rollresult;
+                    }
+                    else if (diceresult_b > diceresult_a)
+                    {
+                        rollresult = diceresult_b.ToString();
+                        return rollresult;
+                    }
+                    else
+                    {
+                        rollresult = diceresult_a.ToString();
+                        return rollresult;
+                    }
+                }
+                case 'd':
+                {
+                    //Roll twice.
+                    int diceresult_a = InternalRoller(numdice, dicefaces, modifier);
+                    int diceresult_b = InternalRoller(numdice, dicefaces, modifier);
+
+                    // Select the lower roll and return that. If neither is lower, return _a.
+                    if (diceresult_a < diceresult_b)
+                    {
+                        rollresult = diceresult_a.ToString();
+                        return rollresult;
+                    }
+                    else if (diceresult_b < diceresult_a)
+                    {
+                        rollresult = diceresult_b.ToString();
+                        return rollresult;
+                    }
+                    else
+                    {
+                        rollresult = diceresult_a.ToString();
+                        return rollresult;
+                    }
+                }
+                default:
+                {
+                    // Default to a single roll.
+                    int diceresult = InternalRoller(numdice, dicefaces, modifier);
+                    rollresult = diceresult.ToString();
+                    return rollresult;
+                }
             }
+                                    
+            int InternalRoller(int numdice, int dicefaces, int modifier)
+            {
+                Random random = new Random();
+                int internaldiceresult = 0;
+                // To account for exclusive maximum of 2nd argument in random.Next.
+                int dicefaceslimit = dicefaces + 1;
 
-            //Apply the modifier.
-            diceresult += modifier;
+                // Roll the dice.
+                for (int i = 0; i < numdice; i++)
+                {
+                    internaldiceresult += random.Next(1, dicefaceslimit);
+                }
 
-            rollresult = diceresult + " " + advordis;
-            return rollresult;
-        }
+                //Apply the modifier.
+                internaldiceresult += modifier;
+
+                return internaldiceresult;
+            }
+      }
 
         // Output the results.
         // Basic output for now; might get fancier later.
